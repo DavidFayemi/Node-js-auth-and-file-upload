@@ -65,6 +65,7 @@ const fetchImages = async (req, res) => {
     });
   }
 };
+
 const deleteImage = async (req, res) => {
   try {
     const getCurrentImageIdToDelete = req.params.id;

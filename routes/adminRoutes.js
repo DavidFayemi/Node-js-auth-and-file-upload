@@ -4,7 +4,6 @@ import verifyAdmin from "../middlewares/adminMiddleware.js";
 
 const router = express.Router();
 
-// Add routes
 router.get("/welcome", authMiddleware, verifyAdmin, (req, res) => {
   const { username, userId, role } = req.userInfo;
   res.status(200).json({
