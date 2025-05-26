@@ -10,7 +10,6 @@ import {
 
 const router = express.Router();
 
-// Add routes
 router.post(
   "/upload",
   authMiddleware,

@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-
+// Define Schema
 const imageSchema = new mongoose.Schema(
   {
     url: {

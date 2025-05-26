@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+// Define Schema
 
 const userSchema = new mongoose.Schema(
   {

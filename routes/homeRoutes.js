@@ -3,7 +3,6 @@ import authMiddleware from "../middlewares/authMiddleware.js";
 
 const router = express.Router();
 
-// Add routes
 router.get("/welcome", authMiddleware, (req, res) => {
   const { username, userId, role } = req.userInfo;
   res.status(200).json({

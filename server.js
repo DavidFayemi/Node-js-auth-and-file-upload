@@ -5,7 +5,7 @@ import authRoutes from "./routes/authRoutes.js";
 import homeRoutes from "./routes/homeRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
 import uploadImageRoutes from "./routes/imageRoutes.js";
-
+// Configure dotenv
 config();
 const port = process.env.PORT || 3030;
 const database_url = process.env.DATABASE_URL;

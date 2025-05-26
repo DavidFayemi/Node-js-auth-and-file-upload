@@ -11,6 +11,7 @@ const authMiddleware = (req, res, next) => {
 
   try {
     const decodedTokenInfo = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    // Send the token info to routes using the middleware
     req.userInfo = decodedTokenInfo;
     next();
   } catch (err) {
